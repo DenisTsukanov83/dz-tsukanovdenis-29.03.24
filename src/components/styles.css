@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+
+/* Форма */
+form {
+    margin-bottom: 123px;
+    border: 2px solid #000;
+    overflow: hidden;
+    display: flex;
+    max-width: 520px;
+}
+
+form input {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: 0;
+    border: 1px solid black;
+    background: #fff;
+}
+
+form button {
+    width: 50%;
+    border: 0;
+    font-size: 16px;
+}
+
+button,
+input[type=submit] {
+    text-transform: uppercase;
+    padding: 8px 15px;
+    border: none;
+    background: grey;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Карточка пиццы*/
+.pizza {
+    background: white;
+    border: 1px solid #ededed;
+    box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.09);
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 22px;
+    width: 385px;
+    justify-content: space-between;
+}
+
+.pizza img {
+    width: 252px;
+    height: 200px;
+    object-fit: contain;
+}
+
+.pizza span {
+    font-weight: 600;
+    padding: 5px;
+    line-height: 1;
+    font-size: 27px;
+}
+
+.pizza .pizza-controls {
+}
+
+.pizza svg {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #392e4a;
+}
+
+.pizza a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pizza .title {
+    text-align: center;
+    line-height: 1.3;
+    font-size: 27px;
+}
+
+/*Edit form*/
+.edit-form {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.edit-form input {
+    width: 100%;
+}
+
+/* Пагинация */
+.pagination {
+    text-align: center;
+    display: inline-grid;
+    grid-template-columns: repeat(4, auto);
+    align-items: stretch;
+    justify-content: center;
+    align-content: center;
+    margin: 52px 0 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+}
+
+.pagination>* {
+    margin: 0;
+    padding: 15px 20px;
+    border-right: 1px solid #e1e1e1;
+}
+
+.pagination :first-child {
+    cursor: pointer;
+}
+
+.pagination :last-child {
+    cursor: pointer;
+    border-right: 0;
+}
+
+.pagination .disabled {
+    pointer-events: none;
+    color: #f2f2f2;
+}
+
+/* Страница каждой пиццы */
+.pizza-page img {
+    width: 420px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.pizza-page h2 {
+    font-size: 52px;
+    margin-top: -3rem;
+}
+
+.pizza-page p {
+    font-size: 22px;
+    line-height: 2;
+    text-align: center;
+}
+
+.pizza-page span {
+    font-size: 42px;
+    transform: rotate(4deg);
+}
